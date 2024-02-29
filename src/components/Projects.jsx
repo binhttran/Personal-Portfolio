@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 
 const SectionTitle = styled.h3`
-    color: #ADBC9F;
-    margin-left: 40px;
+color: #ADBC9F;
+margin-left: 50px;
 
 `;
 const SubTitle = styled.h3`
@@ -40,6 +40,7 @@ const Dates = styled.p`
     color: #FBFADA;
     max-width: 20%;
     text-align: left;
+    margin-left: 5%;
 `
 const Container2 = styled.div`
     display: flex;
@@ -50,7 +51,7 @@ const Container = styled.main`
     flex-direction: column;
     justify-content: center;
     background-color: #436850;
-    max-width: 60%;
+
 `;
 
 export default function Projects(){

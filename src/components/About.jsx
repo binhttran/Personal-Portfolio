@@ -1,58 +1,47 @@
 import styled from 'styled-components';
 
-
-const SectionTitle = styled.h3`
-    color: #ADBC9F;
-    margin-left: 50px;
-
-`;
-const SubTitle = styled.h3`
-    color: #ADBC9F;
-    max-width: 70%;
-    margin-left: 17%;
-    flex: 1;
-
-
-`;
-
-const EachSection = styled.div`
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-`;
-
-const About = styled.p`
-    color: white;
-    margin: 20px 50px;
-    line-height: 1.5;
-
-`;
-
-const Description = styled.p`
-    color: #FBFADA;
-    margin-left: 37%;
-    text-align: justify;
-    line-height: 1.5;
-    margin-top: 0;
-
-
-`;
-const Dates = styled.p`
-    color: #FBFADA;
-    max-width: 20%;
-    text-align: left;
-`
-const Container2 = styled.div`
-    display: flex;
-`;
-
 const Container = styled.main`
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #436850;
-    max-width: 60%;
 `;
+const SectionTitle = styled.h3`
+    color: #ADBC9F;
+    margin-left: 50px;
+`;
+const About = styled.p`
+    color: white;
+    margin: 20px 50px;
+    line-height: 1.5;
+`;
+const EachSection = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+`;
+const SubTitle = styled.h3`
+    color: #ADBC9F;
+    margin: auto;
+    text-align: center;
+`;
+const Description = styled.p`
+    color: #FBFADA;
+    line-height: 1.5;
+    margin-top: 0;
+`;
+const Dates = styled.p`
+    color: #FBFADA;
+`;
+const EduWrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+    width: 200%;
+`;
+const EduDesc = styled.div`
+    display: flex;
+    flex-direction: column;
+`
 
 export default function AboutMe(){
     return(
@@ -63,6 +52,21 @@ export default function AboutMe(){
                             Welcome to my website! Feel free to read more about me and my experience.</About>
                 </EachSection>
                 <EachSection>
+                    <EduWrapper>
+                        <Dates>Sept 2022 - May 2026</Dates>
+                        <div>
+                            <SubTitle>Boston University</SubTitle>
+                            <Description>Bachelor of Arts, BA in Computer Science</Description>
+                        </div>
+                    </EduWrapper>
+                </EachSection>
+        </Container>
+        
+    )
+}
+
+/**
+ * <EachSection>
                     <Container2> 
                         <Dates>September 2018 - Present</Dates>
                         <SubTitle>Boston University</SubTitle>  
@@ -79,7 +83,5 @@ export default function AboutMe(){
                             <Description><b>Achievements: </b>Questbrigdge National Finalist, Simon Scholar Receiver of $16k, AP Scholar with Distinction</Description> 
                             <Description><b>Extracurriculars:</b>Publicist of Make-A-Wish and Kiwin's, Tennis Team co-captain, 100+ hours volunteering</Description>
                 </EachSection>
-        </Container>
-        
-    )
-}
+ * 
+ */

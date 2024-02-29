@@ -1,23 +1,26 @@
 import styled from 'styled-components';
 
 const word = styled.p`
-    color: white;
+    color: #FBFADA;
 `;
 const Div = styled.div`
+    background-color: #436850;
+`;
+const catagory = styled.h3`
     color: white;
 `;
 export default function Skills(){
     return(
-        <div>
-            <Div>
-                <h3>Comfortable</h3>
-                <word>Java, Python, HTML/CSS, ReactJS, Latex</word>
-            </Div>
-            <Div>
-                <h3>Familiar</h3>
-                <word>React, JavaScript, Git</word>
-            </Div>
-        </div>
+        <Div>
+            <div>
+                <catagory>Comfortable</catagory>
+                <word>Java, Python, HTML/CSS, Latex</word>
+            </div>
+            <div>
+                <catagory>Familiar</catagory>
+                <word>ReactJS, JavaScript, Git</word>
+            </div>
+        </Div>
        
     )
 

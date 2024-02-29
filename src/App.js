@@ -1,22 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
-// import About from './About';
-// import Experience from './Experience';
-import Header from './components/Header';
-
 import styled from 'styled-components';
+
+import Header from './components/Header';
 import Main from './components/Main'
 
 const Container = styled.div`
   display: flex;
-  flex-direction: row;
+`;
+
+const LeftContainer = styled.div`
+  width: 30%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto; 
+`;
+const RightContainer = styled.div`
+  width: 70%;
+  position: relative;
+  margin-left: 30%; 
+  overflow-y: auto;
 `;
 
 function App() {
   return (
     <Container>
-      <Header/>
-      <Main/>
+      <LeftContainer><Header/></LeftContainer>
+      <RightContainer><Main/></RightContainer>
     </Container>
   );
 }

@@ -1,4 +1,10 @@
+import { BrowserRouter as Routes, Route, BrowserRouter } from 'react-router-dom';
 import styled from 'styled-components';
+import AboutMe from "./About.jsx"
+import React from 'react';
+import Navigation from './Navigation';
+import Projects from './Projects';
+import Experience from './Experience';
 
 const Name = styled.h1`
     color: #436850;
@@ -15,7 +21,6 @@ const Div = styled.div`
     background-color: #D7E4C0;
     display: flex;
     flex-direction: column; 
-    max-width: 40%; 
     height: 100vh; 
     justify-content: center;
     align-items: center;
@@ -33,20 +38,22 @@ const ListUl = styled.ul`
     text-align: center;
 `;
 
-
-export default function Header(){
-    return(
-        <Div>
-            <Name>Binh Tran</Name>
+const Header = () => {
+  return (
+    <Div>
+        <Name>Binh Tran</Name>
             <Description> CS student at Boston University</Description>
-            <nav>
-                <ListUl>
-                    <List>About</List>
-                    <List>Projects</List>
-                    <List>Experience</List>
-                </ListUl>
-            </nav>
-        </Div>
-       
-    )
+    <BrowserRouter>
+      <Routes>
+        <Navigation />
+            <Route path="/about" element={<AboutMe/>} />
+            <Route path="/projects" element={<Projects/>} />
+            <Route path="/experience" element={<Experience/>} />         
+      </Routes>
+    </BrowserRouter>
+    </Div>
+
+  );
 }
+
+export default Header;
