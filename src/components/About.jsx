@@ -105,8 +105,8 @@ export default function AboutMe(){
                 <Line/>
 
                     <About>
-                        Hi, my name is Binh Tran I am a second year student at Boston University studying computer science. I am excited to further explore my studies and find a concentration that I am passionate about. I am an aspiring software engineer, who is looking to gain experience through a technological internship.
-                        Welcome to my website! Feel free to read more about me and my experience.
+                        Hi, I am a second year student at Boston University studying computer science. I am excited to further explore my studies and find a specialty that I am passionate about. I am an aspiring software engineer, who is looking to gain experience through a technological internship.
+                        Welcome to my page! Feel free to read more about me and my experience.
                     </About>
             </EachSection>
 

@@ -116,7 +116,7 @@ export default function Experience(){
                         <SubTitle>CodeSpeak Labs</SubTitle>  
                         <Position>Digital Design Intern</Position>
                         
-                            <Description>OConceptualized and crafted 20 distinctive variations of the logo for the esteemed Orange County Goes Solar initiative, employing advanced digital design techniques.</Description> 
+                            <Description>Conceptualized and crafted 20 distinctive variations of the logo for the esteemed Orange County Goes Solar initiative, employing advanced digital design techniques.</Description> 
                             <Description>Actively participated in and showcased expertise in HTML through engaging weekly classes, exemplifying a keen aptitude for design principles.</Description>
                         </Wrapper2>
                     </Wrapper>
