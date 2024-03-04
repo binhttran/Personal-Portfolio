@@ -1,10 +1,8 @@
-import { BrowserRouter as Routes, Route, BrowserRouter } from 'react-router-dom';
 import styled from 'styled-components';
-import AboutMe from "./About.jsx"
 import React from 'react';
-import Navigation from './Navigation';
-import Projects from './Projects';
-import Experience from './Experience';
+import Navigation from './Nagivation';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 const Name = styled.h1`
     color: #436850;
@@ -12,9 +10,15 @@ const Name = styled.h1`
 
 `;
 
-const Description =styled.h3`
-    color: white;
+const Description =styled.a`
+    color: #ADBC9F;
     text-align: center;
+    text-decoration: none;
+    font-weight: bold;  
+
+    &:hover {
+      color: darkred ; 
+  }
 `;
 
 const Div = styled.div`
@@ -26,31 +30,12 @@ const Div = styled.div`
     align-items: center;
 `;
 
-const List = styled.li`
-    color: #436850;
-    list-style: none; 
-    padding: 5px;
-    margin-right: 50px;
-
-    
-`;
-const ListUl = styled.ul`
-    text-align: center;
-`;
-
 const Header = () => {
   return (
     <Div>
-        <Name>Binh Tran</Name>
-            <Description> CS student at Boston University</Description>
-    <BrowserRouter>
-      <Routes>
-        <Navigation />
-            <Route path="/about" element={<AboutMe/>} />
-            <Route path="/projects" element={<Projects/>} />
-            <Route path="/experience" element={<Experience/>} />         
-      </Routes>
-    </BrowserRouter>
+      <Name>Binh Tran</Name>
+      <Description href={"https://www.bu.edu/cs/"} target="_blank"> CS student at Boston University</Description>
+      <Navigation/>
     </Div>
 
   );

@@ -6,13 +6,13 @@ import styled from 'styled-components';
 
 const Container = styled.div`
     display: flex;
+    margin: 0;
     flex-direction: column;
-    width: 100%;
 `;
 
 export default function Main(){
     return(
-        <Container>
+        <Container >
             <AboutMe/>
             <Experience/>
             <Projects/>
