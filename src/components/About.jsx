@@ -62,6 +62,8 @@ const Dates = styled.p`
     color: #FBFADA;
     text-align: center;
     margin-left: 50px;
+    padding-top: 19px;
+
 
     @media (max-width: 1000px) {
         margin: 20px auto;
