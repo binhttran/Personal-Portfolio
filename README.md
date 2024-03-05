@@ -7,6 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 ### `1. run npm install`
 ### `2. run npm create-react-app Personal-Portfolio`  
+### `3. npm install styled-components`
 ### `3. run npm start`
 
 Runs the app in the development mode.\

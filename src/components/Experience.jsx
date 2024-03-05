@@ -59,6 +59,8 @@ const Dates = styled.p`
     color: #FBFADA;
     text-align: center;
     margin-left: 50px;
+    padding-top: 19px;
+
 
 `;
 const Wrapper = styled.div`
